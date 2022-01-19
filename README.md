@@ -1,61 +1,39 @@
-# Unit 18 Nosql Homework: Workout Tracker
+# Homework 18 - No SQL: Fitness Tracker - Michael Mallon
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+## What I did
 
-## User Story
+This week I used Express.js to build a fitness tracking application. Unlike other homework assignemnts, this application does not use MySQL. Instead, we were instructed to use NoSQL service: MongoDB. For this assignment, I built a new model (`/models/wokrout.js`) to define all of the perameters used in a workout. The cool part was how I was able to create variables that were not used for all situations. For instance, I defined `distance` for cardio workouts. I can use the same model for weight lifting exercises, that variable will simply not be used.
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+<br>
 
-## Business Context
+### Motivation:
+This application opened my eyes to less-structured data. I really like the idea of there being less "rules" when designing a database. MongoDB is part of the MERN stack which I hope to gain more experience with in this class.
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+<br>
 
-## Acceptance Criteria
+### Problems I solved:
+    * Built Model for workout
+    * Built routes to serve data from MongoDB
+    * Built routes to serve front-end HTML data
+    * Used Mongodb.com to configure a public-facing database
+    * Deployed to Heroku for public website hosting and linked to Mongo
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+<br />
+<br />
 
-The user should be able to:
+## Installation:
+Download all associated files in this repository. Install Mongo then use the `npm install` function. After that, CD to the directory the root application folder is installed in and use the `npm start` function.
 
-  * Add exercises to the most recent workout plan.
 
-  * Add new exercises to a new workout plan.
-
-  * View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
-
-  * View the total duration of each workout from the past seven workouts on the `stats` page.
-
-> **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
-
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
-
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
-
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
-
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
-
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We want you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the GitHub repository
+## Credits
+- SMU
+- Trilogy Education Services
+- [Mozilla](https://developer.mozilla.org)
+- [W3 Schools](https://www.w3schools.com/)
+- [W3.org](https://www.w3.org/)
+- [Stack Overflow](https://stackoverflow.com)
+- [MySQLTutorial](https://www.mysqltutorial.org/mysql-update-data.aspx)
+- [DYClassroom](https://dyclassroom.com/mysql/mysql-select-from-table)
+- [FreeCodeCamp](https://forum.freecodecamp.org/t/console-log-array-prints-a-result-but-return-array-is-undefined/192382)
+- [Dev.to](https://dev.to/afifsohaili/dealing-with-promises-in-an-array-with-async-await-5d7g)
+- [Mongo](https://docs.mongodb.com/manual)
