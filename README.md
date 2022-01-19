@@ -24,6 +24,8 @@ This application opened my eyes to less-structured data. I really like the idea 
 ## Installation:
 Download all associated files in this repository. Install Mongo then use the `npm install` function. After that, CD to the directory the root application folder is installed in and use the `npm start` function.
 
+## Public Hosting:
+If you would like to view this application without installing it locally, see visit the Heroku deployed link: [FitnessTracker-Deployed](https://mm-hw18-fitness-tracker.herokuapp.com/)
 
 ## Credits
 - SMU
